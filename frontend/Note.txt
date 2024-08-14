@@ -1,0 +1,13 @@
+install create react app using npx create app frontend
+install tailwind and do tailwind setting
+
+delete all the content of app.css and app.js
+
+install react-router-dom for routing purpose
+run the project npm start
+
+provide outlet in the app.js to load pages/home content
+when app will load it will load thought app.js files
+
+Note- image upload on login page 1:26:00
+ 
