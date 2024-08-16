@@ -10,5 +10,7 @@ provide outlet in the app.js to load pages/home content
 when app will load it will load thought app.js files
 
 Note- image upload on login page 1:26:00
-note: watch again 3:30 
+note: watch again 3:30:00 
+read- outlet in adminpanel ,usecontext
+
  
