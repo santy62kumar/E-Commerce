@@ -1,7 +1,8 @@
-const productModel = require("../../models/productModel")
+const productModel = require("../models/productModel")
 
 const filterProductController = async(req,res)=>{
- try{
+ 
+try{
         const categoryList = req?.body?.category || []
 
         const product = await productModel.find({

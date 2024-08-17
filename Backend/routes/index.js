@@ -1,6 +1,6 @@
 const express = require('express')
 
-const router = express.Router()
+const router = express.Router();
 
 const userSignUpController = require("../controller/user/userSignUp")
 const userSignInController = require('../controller/user/userSignIn')
@@ -53,4 +53,4 @@ router.post("/delete-cart-product",authToken,deleteAddToCartProduct)
 
 
 
-module.exports = router
+module.exports = router;

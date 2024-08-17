@@ -59,8 +59,6 @@ const SignUp = () => {
           })
     
           const dataApi = await dataResponse.json()
-          //console.log("data",dataApi,);
-          
 
           if(dataApi.success){
             toast.success(dataApi.message)
