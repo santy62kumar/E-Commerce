@@ -1,30 +1,22 @@
-const productModel = require("../models/productModel")
-
-const filterProductController = async(req,res)=>{
- 
-try{
-        const categoryList = req?.body?.category || []
-
-        const product = await productModel.find({
-            category :  {
-                "$in" : categoryList
-            }
-        })
-
-        res.json({
-            data : product,
-            message : "product",
-            error : false,
-            success : true
-        })
- }catch(err){
-    res.json({
-        message : err.message || err,
-        error : true,
-        success : false
-    })
- }
-}
+const mongoose = require('mongoose')
 
 
-module.exports = filterProductController
+const userSchema = new mongoose.Schema({
+    name : String,
+    email : {
+        type : String,
+        unique : true,
+        required : true
+    },
+    password : String,
+    profilePic : String,
+    role : String,
+},{
+    timestamps : true
+})
+
+
+const userModel =  mongoose.model("user",userSchema)
+
+
+module.exports = userModel

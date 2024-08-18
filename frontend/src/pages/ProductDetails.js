@@ -49,7 +49,7 @@ const ProductDetails = () => {
     const dataReponse = await response.json()
 
     setData(dataReponse?.data)
-    setActiveImage(dataReponse?.data?.productImage[0])
+    setActiveImage(dataReponse?.data?.productImage[1])
 
   }
 

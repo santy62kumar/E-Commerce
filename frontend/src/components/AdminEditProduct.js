@@ -157,7 +157,7 @@ const AdminEditProduct = ({
            </label> 
            <div>
                {
-                 data?.productImage[0] ? (
+                 data?.productImage[1] ? (
                      <div className='flex items-center gap-2'>
                          {
                            data.productImage.map((el,index)=>{
